@@ -15,7 +15,10 @@ int main() {
     cin >> width;
     cout << "Enter the height of the rectangle: ";
     cin >> height;
-
+    if ((width <= 0) || (height <= 0)){
+        cout << "Uncorrect data" << endl;
+        return 1;
+    }
     cout << "Perimeter of rectangle: " <<  setprecision(2) << perimeter(width, height) << endl;
     cout << "Area of rectangle: " << setprecision(2) << area(width, height) << endl;
     cout << "Diagonal of rectangle: " << setprecision(2) << diagonal(width, height) << endl;
