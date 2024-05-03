@@ -34,6 +34,10 @@ int main(){
 		cout<<"perimeter: "<<TriangleP(a,b,c)<<"\n";
 		cout<<"area: "<<TriangleS(a,b,c)<<endl;
 		cout<<"corresponding midle lines are: "<<TriangleM(a)<<" "<<TriangleM(b)<<" "<<TriangleM(c)<<endl;
+if (((a==b)||(b==c)||(c==a))&&((c==a)&&(c!=b))){
+cout<<"The triangle is also isosceles"<<endl;}
+elseif((a==b)&&(b==c)&&(c==a)){
+cout<<"The triangle is equilateral";}
 		
 
 	return 0;
